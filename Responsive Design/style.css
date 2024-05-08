@@ -1,0 +1,28 @@
+.responsive {
+  display: flex;
+}
+
+.responsive > div {
+  width: 32%;
+  height: 300px;
+  margin: 0.44%;
+}
+.div1 {
+  background-color: #ff8989;
+}
+.div2 {
+  background-color: #88f7ce;
+}
+.div3 {
+  background-color: #e29df2;
+}
+
+@media screen and (max-width: 600px) {
+  .responsive {
+    display: block;
+    width: 100%;
+  }
+  .responsive > div {
+    width: 100%;
+  }
+}

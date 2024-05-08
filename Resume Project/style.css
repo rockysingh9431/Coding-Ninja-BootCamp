@@ -1,0 +1,421 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+section:nth-child(2n + 1) {
+  background-color: rgb(218, 211, 211);
+}
+section:nth-child(2n) {
+  background-color: rgb(248, 227, 227);
+}
+.pd75px {
+  padding-bottom: 75px;
+}
+.mb75px {
+  margin-bottom: 75px;
+}
+.section-heading {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  color: #18325d;
+  padding: 50px;
+}
+
+/* Body Header */
+
+#body-header {
+  height: 65vh;
+  opacity: 0.8;
+  background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.horizontal-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu li a {
+  transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+  color: lightgrey;
+  border-bottom: 1px solid black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+  margin-top: 15vh;
+}
+
+#my-name {
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.social-icons li a i {
+  /*color: red;*/
+  padding: 10px;
+  font-size: 1.6rem;
+  border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/*About Section*/
+
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+#my-image {
+  height: 12rem;
+  width: 12rem;
+  margin: auto;
+}
+
+#my-image img {
+  height: 100%;
+  width: 100%;
+  margin-top: -14vh;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+  margin: auto;
+  margin-top: -10vh;
+  padding: 10px;
+  width: 70%;
+  text-align: justify;
+  color: grey;
+  line-height: 28px;
+  font-size: 1.1rem;
+}
+
+.text-highlight {
+  color: #2857a4;
+  font-weight: 600;
+}
+
+/*******   Skills section  **************/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 75vw;
+  margin: auto;
+}
+.skill-progress {
+  margin: 40px;
+  border-radius: 1.2rem;
+  border: 1px solid rgb(160, 160, 160);
+  width: 200px;
+  background-color: lightgrey;
+  box-shadow: 2px 2px 2px 2px #b9b9b9 inset;
+}
+.skill-progress > div {
+  border-radius: 20px 0px 0px 20px;
+  font-size: 1.3rem;
+  padding: 4px;
+  padding-left: 10px;
+  box-shadow: 1px 1px 5px 2px #989882;
+}
+.skill-name > span {
+  color: white;
+}
+
+.cplus {
+  background-color: #0a0b32;
+  width: 60%;
+}
+
+.java {
+  background-color: #8f0249;
+  width: 50%;
+}
+
+.javascript {
+  background-color: #0a4146;
+  width: 70%;
+}
+
+.CSS {
+  background-color: #042205;
+  width: 80%;
+}
+
+.HTML {
+  background-color: #b52909;
+  width: 70%;
+}
+
+.python {
+  background-color: #3a024cf2;
+  width: 70%;
+}
+
+.MongoDB {
+  background-color: #112426;
+  width: 70%;
+}
+
+.Nodejs {
+  background-color: #3d3054;
+  width: 60%;
+}
+.Express {
+  background-color: #233050;
+  width: 80%;
+}
+.react {
+  background-color: rgb(41, 96, 96);
+  width: 80%;
+}
+.Bootstrap {
+  background-color: #042205;
+  width: 70%;
+}
+.tailwind {
+  background-color: #089aaa;
+  width: 70%;
+}
+
+/****** portfolio-display  ********************************/
+
+.portfolio-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 75vw;
+  margin: auto;
+}
+.portfolio-image-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+  position: relative;
+  margin: 5px;
+}
+.portfolio-image-container > img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-text {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  right: 5%;
+  bottom: 10%;
+  padding: 10px;
+  border-radius: 5%;
+  transition: all 0.65s ease-in-out;
+  color: transparent;
+}
+.portfolio-image-container:hover {
+  box-shadow: 0 0 20px #90c0d1;
+}
+
+.portfolio-image-container:hover .portfolio-text {
+  font-size: 1rem;
+  background-color: #80808078;
+  color: rgb(0, 0, 0);
+}
+
+/******** contact section ********/
+#contact {
+  background: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+  height: 700px;
+}
+.contact {
+  color: white;
+  margin-bottom: 40px;
+}
+.contact-display {
+  display: flex;
+  width: 75vw;
+  margin: auto;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+.form-details {
+  width: 50%;
+
+  padding: 10px;
+}
+.info {
+  height: auto;
+  width: 500px;
+}
+.info > input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  border-bottom: 2px solid white;
+  color: rgb(162, 162, 162);
+  margin-bottom: 50px;
+}
+.info > textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  border-bottom: 2px solid white;
+  color: rgb(162, 162, 162);
+  margin-bottom: 50px;
+}
+.info > button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 7px;
+  font-size: 1.3rem;
+  margin-left: 160px;
+}
+.contact-info {
+  margin-left: 10vw;
+  width: 50%;
+}
+.about-us > div {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.about-us > p {
+  font-size: 1.2rem;
+  color: rgb(176, 176, 176);
+}
+.my-add > div {
+  color: white;
+}
+.about-us > p > i {
+  color: white;
+}
+
+/************** Experience Section *******************/
+.timeline {
+  position: relative;
+  width: 75vw;
+  height: auto;
+  margin: auto;
+}
+.timeline-box {
+  position: relative;
+  height: 200px;
+  width: 35%;
+  left: 5%;
+
+  padding: 10px;
+}
+.timeline-box:nth-child(2n) {
+  left: 58%;
+}
+.timeline-box::after {
+  position: absolute;
+  content: "";
+  height: 0.75rem;
+  width: 0.75rem;
+  background-color: rgb(161, 157, 157);
+  border-radius: 50%;
+  top: 30%;
+  left: 121.5%;
+  z-index: 1;
+}
+.timeline-box:nth-child(2n)::after {
+  left: -23%;
+}
+.timeline-divider {
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  height: 66%;
+  width: 0px;
+  border: 1px dashed rgb(161, 157, 157);
+}
+.timeline-traveller {
+  position: sticky;
+  margin-top: -38px;
+  top: 20%;
+  color: #2857a4;
+  rotate: 90deg;
+  z-index: 2;
+}
+.heading {
+  display: flex;
+  justify-content: baseline;
+  margin-bottom: 80px;
+}
+.cn-icon {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+.cn-icon img {
+  height: 62px;
+}
+
+.designation-degree {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  color: #18325d;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.company-institute-name {
+  position: absolute;
+  width: auto;
+  top: 12%;
+  right: 0%;
+  color: rgb(175, 101, 10);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.duration {
+  position: absolute;
+  top: 22%;
+  right: 0%;
+  color: rgb(138, 135, 135);
+  font-size: 1rem;
+  font-weight: bold;
+}
+.bio-text {
+  font-size: 0.9rem;
+  color: lightslategray;
+}
