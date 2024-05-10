@@ -1,0 +1,29 @@
+#div1 {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  background-color: aqua;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translateY(-15px);
+  }
+  25% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  75% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(7px);
+  }
+}
+#div1:hover {
+  animation: bouncing 1s ease-in-out;
+}
