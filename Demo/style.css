@@ -1,26 +1,14 @@
-div {
+#parent {
+  width: 600px;
+  height: 600px;
+  border: 1px solid rgb(2, 2, 2);
+}
+
+#child {
   width: 100%;
-  background-image: linear-gradient(red, yellow, green);
-}
-
-@media only screen and (max-width: 572px) {
-  div {
-    width: 70%;
-  }
-}
-@media screen and (min-width: 682px) {
-  div {
-    width: 90%;
-  }
-}
-
-@media only print and (min-width: 768px) {
-  div {
-    width: 30%;
-  }
-}
-@media (min-width: 1024px) {
-  div {
-    width: 70%;
-  }
+  height: 100%;
+  border: 6px solid rgb(247, 253, 71);
+  padding: 10px;
+  background-color: cyan;
+  box-sizing: border-box;
 }
