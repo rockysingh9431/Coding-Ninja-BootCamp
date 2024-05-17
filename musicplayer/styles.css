@@ -1,0 +1,664 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+:root {
+  --bg-color-darkBlue: rgb(1, 1, 33);
+}
+
+:root {
+  --scroll-bar-color: #c5c5c5;
+  --scroll-bar-bg-color: #f6f6f6;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  scrollbar-width: none;
+  scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scroll-bar-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-color);
+  border-radius: 20px;
+  border: 3px solid var(--scroll-bar-bg-color);
+}
+
+body {
+  background-color: var(--bg-color-darkBlue);
+  color: white;
+  opacity: 95%;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 1px;
+}
+/**** Common Styles ********************************/
+
+.title {
+  font-size: 1.7rem;
+  font-weight: bold !important ;
+}
+.mt6rem {
+  margin-top: 6rem;
+}
+
+/*********Carousel***********/
+
+.carousel {
+  display: flex;
+  height: 15vw;
+  padding-top: 1rem;
+}
+.slide {
+  height: 15rem;
+  width: 38%;
+  margin: 0.3rem;
+}
+.slide:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+.slide > img {
+  height: 17vw;
+  width: 100%;
+}
+
+/************** Navigation Bar *****************/
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 10;
+  background-color: var(--bg-color-darkBlue);
+  width: 100vw;
+  top: 0%;
+  left: 0%;
+}
+
+/**Logo**/
+.nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.player-name {
+  margin-left: 1rem;
+}
+.player-name > p {
+  margin: 0px;
+  padding: 0px;
+}
+.brand > img {
+  height: 60px;
+  background-color: transparent;
+}
+.studio {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/********** Nav-items ********/
+.nav-items {
+  list-style: none;
+  font-size: 1.5rem;
+}
+.nav-items > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+/*********** Navigation section right Search/Notification/Profile ******************/
+.hamburger {
+  font-size: 2rem;
+  display: none;
+}
+.nav-right {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 2rem;
+}
+.search {
+  position: relative;
+  display: flex;
+  padding: 0px;
+  width: 70%;
+}
+.search > input {
+  background-color: rgb(14, 14, 60);
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+  width: 90%;
+  height: 40px;
+  padding-left: 10%;
+  color: rgb(155, 155, 155);
+  font-size: 1.1rem;
+}
+.search-icon {
+  position: absolute;
+  top: 35%;
+  left: 3%;
+}
+.mic-icon {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+  font-size: 1.5rem;
+}
+.search > i {
+  color: rgb(181, 184, 212);
+}
+
+/****** Notifications ************/
+.notification {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+/********Profile**********/
+.profile > img {
+  cursor: pointer;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+}
+
+/***********main section ***********/
+body {
+  min-width: 100px;
+}
+.container {
+  display: flex;
+  margin-top: 60px;
+  padding: 40px 40px; /* Added padding for spacing */
+  box-sizing: border-box;
+}
+.main {
+  margin: 1rem;
+  width: 68%;
+  min-width: 450px;
+}
+aside {
+  margin-top: 1rem;
+  width: 30%;
+  padding-right: 40px;
+}
+
+/******** Latest Release Section***********/
+.song-details {
+  display: flex;
+}
+.artist-details:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.song-details img {
+  height: 8rem;
+  width: 8rem;
+}
+.image-container {
+  position: relative;
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  display: none;
+}
+
+.pause-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+.image-container:hover .play-btn {
+  display: block;
+}
+.image-container:hover img {
+  opacity: 0.7;
+  transition: all 0.4s ease-in-out;
+}
+.songs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+}
+.song {
+  position: relative;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0rem;
+}
+
+.song-info {
+  padding: 2rem;
+}
+
+.release-date {
+  color: rgb(204, 204, 204);
+}
+.song-timer {
+  color: aliceblue;
+  margin-top: -1.2rem;
+}
+
+.dots > label {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
+.dots-menu {
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+input[type="checkbox"] {
+  display: none; /* Hide the checkbox */
+}
+input[type="checkbox"]:checked + .dots-menu {
+  display: block; /* Show the menu when the checkbox is checked */
+}
+.dots label {
+  cursor: pointer;
+}
+.dots-menu > div {
+  color: rgb(0, 0, 0);
+}
+
+/************ Artists Section ****************/
+
+.artist-details {
+  margin-top: 1.5rem;
+  margin-right: 2.5rem;
+}
+.artist-details > a > img {
+  height: 8.5rem;
+  width: 8.5rem;
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+.artists {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.artist-name {
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+/***************** station section ****************/
+.stations {
+  display: flex;
+  background-color: rgb(8, 8, 69);
+  margin-top: 3rem;
+  align-items: center;
+  width: 100%;
+}
+.station-image > img {
+  height: 8rem;
+  width: 10rem;
+  padding: 30px;
+}
+.channels {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+.channel {
+  padding: 0.7rem;
+  position: relative;
+}
+.channel > img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.channel-name {
+  position: absolute;
+  top: 37%;
+  left: 30%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+/*************Mood Section  ********************/
+
+.mood-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+}
+.mood {
+  position: relative;
+}
+.mood > img {
+  height: 12rem;
+  width: 20vw;
+}
+.mood-name {
+  position: absolute;
+  top: 37%;
+  left: 30%;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.road-trip {
+  color: rgb(36, 100, 119);
+}
+.electronic {
+  color: rgb(255, 199, 255);
+}
+
+/************Latest English/Hindi/Devotional Section**********************/
+
+.latest-songs {
+  margin-top: 3rem;
+}
+.song-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.song-information {
+  padding: 3rem 0rem;
+  height: 9rem;
+  width: 9rem;
+}
+.song-information > img {
+  height: 100%;
+  width: 100%;
+}
+.song-name {
+  display: flex;
+  flex-wrap: wrap;
+}
+/***** Song-queue *****/
+.queue-body {
+  position: fixed;
+  width: 27%;
+  right: -1%;
+}
+.queue {
+  background-color: var(--bg-color-darkBlue);
+  height: 73vh;
+
+  overflow: auto;
+}
+.queue-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-darkBlue);
+  padding-bottom: 30px;
+}
+.main-queue-head {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.side-queue-head {
+  margin-right: 3rem;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.list-song-details > img {
+  height: 3rem;
+  width: 3rem;
+}
+.queue-menu {
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: absolute;
+  color: black;
+  top: 50px;
+  right: 15%;
+  z-index: 20;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + .queue-menu {
+  display: block;
+}
+.list-song-details {
+  display: flex;
+  width: 90%;
+}
+.side-queue-head > label {
+  font-size: 0.8rem;
+  font-weight: bolder;
+  margin-left: 10px;
+  color: rgb(100, 205, 142);
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.song-list {
+  margin: 10px;
+  display: flex;
+}
+.list-song-info {
+  margin: 3px 20px;
+  color: aliceblue;
+}
+.heart-icon {
+  width: 10%;
+  color: rgb(222, 226, 230);
+  font-size: 1.2rem;
+}
+
+/*************** Responsivity ********************************/
+
+@media screen and (max-width: 900px) {
+  .queue-body {
+    display: none;
+  }
+
+  .nav-right {
+    display: none;
+  }
+  .main {
+    width: 100%;
+  }
+  .song {
+    width: 100%;
+  }
+  .mood > img {
+    width: 50vw;
+  }
+  .about-artist > p {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .mood > img {
+    width: 400px;
+  }
+}
+
+/**********************artist image container artist.html****************/
+.artist-container {
+  position: relative;
+  height: 350px;
+}
+.artist-info {
+  padding: 2rem;
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  height: 300px;
+}
+.about-artist {
+  padding: 2rem 2rem 1rem 3rem;
+  display: flex;
+}
+.artist-image-container {
+  width: 100%;
+}
+.artist-image-container > img {
+  width: 100%;
+  height: 350px;
+  opacity: 0.8;
+}
+.name-followers > .artist-name {
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+.followers {
+  font-size: 1rem;
+}
+.artist-title {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+.play-all-btn {
+  padding-left: 3rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.play-all {
+  padding: 0px 40px;
+  font-size: 1.2rem;
+  color: white;
+  height: 3rem;
+  margin-right: 2rem;
+  background: linear-gradient(-45deg, #dc00be, #4401c0);
+}
+.name-followers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/***************** Artist page queue atyling ******************/
+.artist-page-queue-heading {
+  margin-top: 30px;
+}
+.similar-artists {
+  background-color: var(--bg-color-darkBlue);
+  height: 30vh;
+  overflow: auto;
+}
+.recently-played {
+  background-color: var(--bg-color-darkBlue);
+  height: 40vh;
+  overflow: auto;
+}
+
+.queue-artist {
+  width: 100%;
+  margin-top: 2rem;
+}
+.song-list {
+  padding: 1rem;
+}
+hr {
+  border: 0.5px dashed rgb(191, 164, 196);
+}
+.icon-artist {
+  font-size: 1.5rem;
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(7, 127, 143);
+}
+.icon-artist > i {
+  margin: 5px;
+}
+.recently-played > .song-lists > .song-list {
+  padding: 5px 0rem;
+}
+.similar-artists > .song-lists > .song-list {
+  padding: 5px 0rem;
+}
+.queue-artist > .song-list {
+  padding: 10px 1.5rem;
+}
+.artists-queue-head {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.artist-page {
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/******************footer player controls *****************/
+
+.player {
+  background-color: #1e1e1e;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+.player audio {
+  width: 100%;
+  background-color: transparent;
+}
+.player source {
+  background-color: red;
+}

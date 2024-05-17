@@ -5,15 +5,771 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Static Template</title>
+    <script
+      src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="images/album.png" type="image/x-icon" />
+    <title>Ninja Studio</title>
   </head>
 
   <body>
-    <h1>Welcome Ninja!!</h1>
-    <h3>Write your code here!</h3>
-    <h3>A CSS and JS file has been created and linked for you already.</h3>
-    <h3>Feel free to change the directory structure to your liking.</h3>
-    <h3>Do not delete any .json file from CodeSandbox</h3>
+    <!-- Header Section that is navigation bar-->
+    <header>
+      <nav class="navbar">
+        <div class="nav">
+          <div class="brand">
+            <img src="images/album.png" alt="player-logo" />
+            <div class="player-name">
+              <p>Ninja</p>
+              <p class="studio">Studio</p>
+            </div>
+          </div>
+          <ul class="nav-items">
+            <li><a href="#favorite">Favorites</a></li>
+          </ul>
+        </div>
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        <div class="nav-right">
+          <form class="search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search" value="Search" />
+            <i class="fa-solid fa-microphone mic-icon"></i>
+          </form>
+          <img class="notification" src="images/bell.png" alt="notification" />
+          <div class="profile">
+            <img src="images/profile.jpg" alt="profile-image" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Main body section in which we will be writing code for screens-->
+    <main class="container">
+      <section class="main">
+        <!--Carousel of page-->
+        <div class="carousel">
+          <div class="slide">
+            <img src="images/carousel (1).jpg" alt="carousel-image" />
+          </div>
+          <div class="slide">
+            <img src="images/carousel (2).jpg" alt="carousel-image" />
+          </div>
+          <div class="slide">
+            <img src="images/carousel (3).jpg" alt="carousel-image" />
+          </div>
+        </div>
+
+        <!--Latest Release Section-->
+        <div id="latest-release" class="inner-container mt6rem">
+          <div class="title">Latest Release</div>
+          <div class="songs">
+            <div class="song">
+              <div class="song-details">
+                <div class="image-container">
+                  <img src="images/latest-release/Faded.jpg" alt="faded" />
+                  <i class="fa-solid fa-play play-btn"></i>
+                </div>
+                <div class="song-info">
+                  <div class="song-name">Faded - Alan Walker</div>
+                  <div class="release-date">Aug 2020</div>
+                </div>
+              </div>
+              <div class="song-timer">
+                <div class="dots">
+                  <label for="toggleMenu">...</label>
+                </div>
+                <div>4:50</div>
+              </div>
+              <input type="checkbox" id="toggleMenu" />
+              <div class="dots-menu">
+                <div><i class="fa-regular fa-circle-play"></i> Play Now</div>
+                <hr />
+                <div><i class="fa-solid fa-list-check"></i> Add to Queue</div>
+                <hr />
+                <div><i class="fa-regular fa-heart"></i> Add to Favorites</div>
+                <hr />
+                <div><i class="fa-solid fa-circle-info"></i> Get Info</div>
+              </div>
+            </div>
+
+            <div class="song">
+              <div class="song-details">
+                <div class="image-container">
+                  <img
+                    src="images/latest-release/LLYD.jpg"
+                    alt="love me like u do"
+                  />
+                  <i class="fa-solid fa-play play-btn"></i>
+                </div>
+
+                <div class="song-info">
+                  <div class="song-name">Love me like you do</div>
+                  <div class="release-date">Aug 2020</div>
+                </div>
+              </div>
+              <div class="song-timer">
+                <div class="dots">
+                  <label for="toggleMenu1">...</label>
+                </div>
+                <div>4:50</div>
+              </div>
+              <input type="checkbox" id="toggleMenu1" />
+              <div class="dots-menu">
+                <div><i class="fa-regular fa-circle-play"></i> Play Now</div>
+                <hr />
+                <div><i class="fa-solid fa-list-check"></i> Add to Queue</div>
+                <hr />
+                <div><i class="fa-regular fa-heart"></i> Add to Favorites</div>
+                <hr />
+                <div><i class="fa-solid fa-circle-info"></i> Get Info</div>
+              </div>
+            </div>
+
+            <div class="song">
+              <div class="song-details">
+                <div class="image-container">
+                  <img
+                    src="images/latest-release/Tum-mile.jpg"
+                    alt="Tum-mile"
+                  />
+
+                  <i class="fa-solid fa-play play-btn"></i>
+                </div>
+
+                <div class="song-info">
+                  <div class="song-name">Tum Mile (Love Reprise)</div>
+                  <div class="release-date">Aug 2020</div>
+                </div>
+              </div>
+              <div class="song-timer">
+                <div class="dots">
+                  <label for="toggleMenu2">...</label>
+                </div>
+                <div>4:50</div>
+              </div>
+              <input type="checkbox" id="toggleMenu2" />
+              <div class="dots-menu">
+                <div><i class="fa-regular fa-circle-play"></i> Play Now</div>
+                <hr />
+                <div><i class="fa-solid fa-list-check"></i> Add to Queue</div>
+                <hr />
+                <div><i class="fa-regular fa-heart"></i> Add to Favorites</div>
+                <hr />
+                <div><i class="fa-solid fa-circle-info"></i> Get Info</div>
+              </div>
+            </div>
+
+            <div class="song">
+              <div class="song-details">
+                <div class="image-container">
+                  <img src="images/latest-release/TUm-se.jpg" alt="Tum se" />
+                  <i class="fa-solid fa-play play-btn"></i>
+                </div>
+
+                <div class="song-info">
+                  <div class="song-name">Tum se</div>
+                  <div class="release-date">Aug 2020</div>
+                </div>
+              </div>
+              <div class="song-timer">
+                <div class="dots">
+                  <label for="toggleMenu3">...</label>
+                </div>
+                <div>4:50</div>
+              </div>
+              <input type="checkbox" id="toggleMenu3" />
+              <div class="dots-menu">
+                <div><i class="fa-regular fa-circle-play"></i> Play Now</div>
+                <hr />
+                <div><i class="fa-solid fa-list-check"></i> Add to Queue</div>
+                <hr />
+                <div><i class="fa-regular fa-heart"></i> Add to Favorites</div>
+                <hr />
+                <div><i class="fa-solid fa-circle-info"></i> Get Info</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular Artists Section-->
+        <div class="popular-artists mt6rem">
+          <div class="title">Popular Artists</div>
+          <div class="artists">
+            <div class="artist-details">
+              <a href="artist.html">
+                <img src="images/artists/Alan-walker.jpg" alt="artist-image"
+              /></a>
+
+              <div class="artist-name">Alan Walker</div>
+            </div>
+            <div class="artist-details">
+              <a href="artist.html"
+                ><img src="images/artists/Arijit.jpg" alt="artist-image"
+              /></a>
+              <div class="artist-name">Arijit Singh</div>
+            </div>
+            <div class="artist-details">
+              <a href="artist.html"
+                ><img src="images/artists/badshah.jpg" alt="artist-image"
+              /></a>
+              <div class="artist-name">Badshah</div>
+            </div>
+            <div class="artist-details">
+              <a href="artist.html"
+                ><img src="images/artists/Pritam.jpg" alt="artist-image"
+              /></a>
+              <div class="artist-name">Pritam</div>
+            </div>
+            <div class="artist-details">
+              <a href="artist.html"
+                ><img src="images/artists/Lata-ji.jpg" alt="artist-image"
+              /></a>
+              <div class="artist-name">Lata Mangeshkar</div>
+            </div>
+            <div class="artist-details">
+              <a href="artist.html"
+                ><img src="images/artists/Kishore.jpg" alt="artist-image"
+              /></a>
+
+              <div class="artist-name">Kishore Kumar</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stations Live Broadcast-->
+        <div class="stations">
+          <div class="station-image">
+            <img src="images/stations/station.png" alt="station-hub" />
+          </div>
+
+          <div class="channels">
+            <div class="channel">
+              <img src="images/stations/love.jpg" alt="channel-image" />
+              <div class="channel-name love">Love</div>
+            </div>
+            <div class="channel">
+              <img src="images/stations/chill.jpg" alt="channel-image" />
+              <div class="channel-name chill">Chill</div>
+            </div>
+            <div class="channel">
+              <img src="images/stations/retro.jpg" alt="channel-image" />
+              <div class="channel-name retro">Retro</div>
+            </div>
+            <div class="channel">
+              <img src="images/stations/workout.jpg" alt="channel-image" />
+              <div class="channel-name work">Work</div>
+            </div>
+            <div class="channel">
+              <img src="images/stations/rock.jpg" alt="channel-image" />
+              <div class="channel-name rock">Rock</div>
+            </div>
+            <div class="channel">
+              <img src="images/stations/pop.jpg" alt="channel-image" />
+              <div class="channel-name pop">Pop</div>
+            </div>
+          </div>
+        </div>
+
+        <!--Party Electronic Road Trip  short form (PER)-->
+        <div class="mood-container">
+          <div id="party" class="mood">
+            <img src="images/album/party.jpg" alt="party" />
+            <div class="mood-name">Party</div>
+          </div>
+          <div id="Electronic" class="mood">
+            <img src="images/album/electronic.jpg" alt="electronic" />
+            <div class="mood-name electronic">Electronic</div>
+          </div>
+          <div id="road-trip" class="mood">
+            <img src="images/album/road-trip.jpg" alt="road-trip" />
+            <div class="mood-name road-trip">Road Trip</div>
+          </div>
+        </div>
+
+        <!-- Devotional Songs-->
+        <div id="devotional" class="latest-songs">
+          <div class="title">Devotional Bhakti Songs</div>
+          <div class="song-container">
+            <div class="song-information">
+              <img
+                src="images/Devotional/Hanuman-chalisa.jpg"
+                alt="Hanuman Chalisa"
+              />
+              <div class="song-name">Hanuman Chalisa</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img
+                src="images/Devotional/mangal-bhawan.jpg"
+                alt="Mangal Bhawan"
+              />
+              <div class="song-name">Mangal Bhawan</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img
+                src="images/Devotional/mera-apki-kripa-se.jpg"
+                alt="mera-apki-kripa-se"
+              />
+              <div class="song-name">Mera Apki Kripa Se</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img
+                src="images/Devotional/meri-maa-ke-barabar.jpg"
+                alt="meri-maa-ke-barabar"
+              />
+              <div class="song-name">Meri maa ke Barabar</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img
+                src="images/Devotional/om-ganpatye-namo.jpg"
+                alt="om-ganpatye-namo"
+              />
+              <div class="song-name">Om Ganpatye Namo</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img src="images/Devotional/ram-aye-hai.jpg" alt="Ram Aye Hai" />
+              <div class="song-name">Ram Aye Hai</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img src="images/Devotional/shiv-tandav.jpg" alt="shiv-tandav" />
+              <div class="song-name">Shiv Tandav</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Latest English Section-->
+        <div id="latest-english" class="latest-songs">
+          <div class="title">Latest English</div>
+          <div class="song-container">
+            <div class="song-information">
+              <img src="images/Latest English/Alone.jpg" alt="Alone" />
+              <div class="song-name">Alone</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img
+                src="images/Latest English/Blank-Space.jpg"
+                alt="Blank Space"
+              />
+              <div class="song-name">Blank Space</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img
+                src="images/Latest English/Dandellions.jpg"
+                alt="Dandellions"
+              />
+              <div class="song-name">Dandellions</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img
+                src="images/Latest English/let-me-down-slowly.jpg"
+                alt="Let me down Slowly"
+              />
+              <div class="song-name">Let me Down Slowly</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img src="images/Latest English/Lover.jpg" alt="Lover" />
+              <div class="song-name">Lover</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img
+                src="images/Latest English/save-your-tears.jpg"
+                alt="Save Your Tears"
+              />
+              <div class="song-name">Save Your Tears</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img
+                src="images/Latest English/shap-of-you.jpg"
+                alt="Shape of You"
+              />
+              <div class="song-name">Shape Of You</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+          </div>
+        </div>
+
+        <!--Latest Hindi Section-->
+        <div id="latest-hindi" class="latest-songs">
+          <div class="title">Latest Hindi</div>
+          <div class="song-container">
+            <div class="song-information">
+              <img
+                src="images/Latest Hindi/apna-bana-le.jpg"
+                alt="Apna Bana Le"
+              />
+              <div class="song-name">Apna Bana Le</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img src="images/Latest Hindi/Dil-jhoom.jpg" alt="Dil Jhoom" />
+              <div class="song-name">Dil Jhoom</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img src="images/Latest Hindi/kaise-hua.jpg" alt="Kaise Hua" />
+              <div class="song-name">Kaise Hua</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img src="images/Latest Hindi/kesariya.jpg" alt="Kesariya" />
+              <div class="song-name">Kesariya</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img src="images/Latest Hindi/o maahi.jpg" alt="O Maahi" />
+              <div class="song-name">O Maahi</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img
+                src="images/Latest Hindi/pehle-bhi-main.jpg"
+                alt="Pehle Bhi Main"
+              />
+              <div class="song-name">Pehle Bhi Main</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+            <div class="song-information">
+              <img src="images/Latest Hindi/Tum-se.jpg" alt="Tume se" />
+              <div class="song-name">Tume se</div>
+              <div class="release-date">Aug 11, 2023</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="queue-body">
+        <div class="queue-heading">
+          <div class="main-queue-head">Queue</div>
+          <div class="side-queue-head">
+            <label for="toggleMenuQueue"
+              >Queue <i class="fa-solid fa-angle-down"></i
+            ></label>
+          </div>
+          <input type="checkbox" id="toggleMenuQueue" />
+          <div class="queue-menu">
+            <div>Play Now</div>
+            <hr />
+            <div>Add to Queue</div>
+          </div>
+        </div>
+
+        <div class="queue">
+          <div class="song-lists">
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/Alone.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Alone</div>
+                  <div class=" ">Alan Walker</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/apna-bana-le.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Apna Bana Le</div>
+                  <div class=" ">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/Blank-Space.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Blank Space</div>
+                  <div class=" ">Ed Sheeren</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/Dandellions.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Dandellions</div>
+                  <div class=" ">Taylor Swift</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/Dil-jhoom.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Dil Jhoom</div>
+                  <div class=" ">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/Hanuman-chalisa.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Hanuman Chalisa</div>
+                  <div class=" ">Hariharan</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/kaise-hua.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Kaise Hua</div>
+                  <div class=" ">Vishal Mishra</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/kesariya.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Kesariya</div>
+                  <div class=" ">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/let-me-down-slowly.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Let me Down Slowly</div>
+                  <div class=" ">Sia</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/Lover.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Lover</div>
+                  <div class=" ">Taylor Swift</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/mangal-bhawan.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Mangal Bhawan</div>
+                  <div class=" ">Shri Ram Ji</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/mera-apki-kripa-se.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Mera Apki Kripa Se</div>
+                  <div class=" ">Shankar Suhaas</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/meri-maa-ke-barabar.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Meri Maa Ke Barabar Koi</div>
+                  <div class=" ">Jubin Nautiyal</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/o maahi.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">O Maahi</div>
+                  <div class=" ">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/om-ganpatye-namo.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Om gan Ganpatye Namo Namah</div>
+                  <div class=" ">Ganesh Singh</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/pehle-bhi-main.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Pehle Bhi Main</div>
+                  <div class=" ">Vishal Mishra</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/Pushpa.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Pushpa</div>
+                  <div class=" ">Pushpa Raj</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/ram-aye-hai.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Ram Aye Hai</div>
+                  <div class=" ">Jubin Nautiyal</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/save-your-tears.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Save Your Tears</div>
+                  <div class=" ">Cold Play</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/shap-of-you.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Shape of You</div>
+                  <div class=" ">Ed Sheeren</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/shiv-tandav.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Shiv Tandav</div>
+                  <div class=" ">Shiv Sakti</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/thousand-years.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">A Thousand Years</div>
+                  <div class=" ">Jane winslet</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/tujhe-kab-se.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Tujhe Kab Se Pukare</div>
+                  <div class=" ">Sonu Nigam</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="song-list">
+              <div class="list-song-details">
+                <img src="images/queue/Tum-se.jpg" alt="Alone" />
+                <div class="list-song-info">
+                  <div class="name">Tum se</div>
+                  <div class=" ">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <footer>
+        <div class="player-controls"></div>
+      </footer>
+    </main>
+
+    <footer class="player">
+      <audio controls>
+        <source src="Tum Se.mp3" type="audio/mpeg" />
+      </audio>
+    </footer>
   </body>
 
   <script src="script.js"></script>
