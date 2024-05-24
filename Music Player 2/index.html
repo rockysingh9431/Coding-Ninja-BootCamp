@@ -2,78 +2,131 @@
 <html lang="en">
   <head>
     <title>Music Player</title>
+    <!-- Favicon for the website -->
     <link rel="icon" href="album.png" type="image/png" />
+    <!-- Character encoding for the HTML document -->
     <meta charset="UTF-8" />
+    <!-- Viewport settings for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Link to the external CSS stylesheet -->
     <link href="style.css" rel="stylesheet" />
+    <!-- FontAwesome library for icons -->
     <script
       src="https://kit.fontawesome.com/fb59b70c12.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- Header section -->
     <div class="heading">
-      <h1>Music Player</h1>
-    </div>
-    <button id="toggle-theme" class="toggle-theme">Dark/Light</button>
-    <div class="container">
-      <div class="playerDiv all-song">
-        <div class="filter-box">
-          <div class="filter-genre">Filter By Genre</div>
-          <div class="genre">
-            <select id="select-genre" class="select-genre">
-              <option value="All">All</option>
-              <option value="Hip Hop">Hip Hop</option>
-              <option value="Pop">Pop</option>
-              <option value="Rock">Rock</option>
-              <option value="Jazz">Jazz</option>
-              <option value="Dance">Dance</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="display-song">
-          <h2>All Songs</h2>
-          <div id="song-list" class="song-list"></div>
-        </div>
+      <!-- Player logo and title -->
+      <div class="player-logo">
+        <img src="album.png" alt="player-logo" />
+        <h1 class="title">Music Player</h1>
       </div>
+      <!-- Toggle theme button -->
+      <button id="toggle-theme" class="toggle-theme">Dark/Light</button>
+    </div>
 
-      <div class="playerDiv">
-        <div class="card">
-          <div id="song-info" class="card-body"></div>
-        </div>
-        <div class="audio-controls">
-          <div class="audio">
-            <i id="prev-btn" class="fa-solid fa-backward btn-song"></i>
-            <audio id="audio" controls></audio>
-            <i id="next-btn" class="fa-solid fa-forward btn-song"></i>
-          </div>
-          <button type="submit" class="add-to-playlist">
-            😍Add To Playlist
+    <!-- Main container -->
+    <div class="container">
+      <!-- Search and playlist section -->
+      <div class="search-playlist-container">
+        <!-- Search input for songs and playlists -->
+        <div class="search-song">
+          <input
+            id="search-input"
+            type="text"
+            class="search-input"
+            placeholder="Search song or a playlist"
+          />
+          <button
+            id="search-btn-song"
+            type="submit"
+            class="search-btn search-btn-song"
+          >
+            Search Song
+          </button>
+          <button
+            id="search-btn-playlist"
+            type="submit"
+            class="search-btn search-btn-playlist"
+          >
+            Search Playlist
           </button>
         </div>
+        <!-- Container for all songs and the player -->
+        <div class="playlist-container">
+          <!-- All songs section with genre filter -->
+          <div class="playerDiv all-song">
+            <div class="filter-box">
+              <div class="filter-genre">Filter By Genre</div>
+              <div class="genre">
+                <select id="select-genre" class="select-genre">
+                  <option value="All">All</option>
+                  <option value="Hip Hop">Hip Hop</option>
+                  <option value="Pop">Pop</option>
+                  <option value="Rock">Rock</option>
+                  <option value="Jazz">Jazz</option>
+                  <option value="Dance">Dance</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Display area for all songs -->
+            <div class="display-song">
+              <h2>All Songs</h2>
+              <div id="song-list" class="song-list"></div>
+            </div>
+          </div>
+
+          <!-- Player section with audio controls -->
+          <div class="playerDiv">
+            <div class="card">
+              <div id="song-info" class="card-body"></div>
+            </div>
+            <div class="audio-controls">
+              <div class="audio">
+                <i id="prev-btn" class="fa-solid fa-backward btn-song"></i>
+                <audio id="audio" controls></audio>
+                <i id="next-btn" class="fa-solid fa-forward btn-song"></i>
+              </div>
+              <button id="addBtn" type="submit" class="add-to-playlist">
+                😍Add To Playlist
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Playlist management section -->
       <div class="playlist">
-        <div class="search">
+        <!-- Add new playlist input and button -->
+        <div class="add-playlist-div">
           <input
+            id="playlist-input"
             class="playlist-input"
             type="text"
             placeholder="Enter Playlist Name"
           />
-          <button type="submit" class="add-playlist">Add Playlist</button>
+          <button id="add-playlist-btn" type="submit" class="add-playlist">
+            Add Playlist
+          </button>
         </div>
-        <div class="playlist-details">
+        <!-- Display for current and all playlists -->
+        <div class="playerDiv">
           <div class="current-playlist">
             <h2>Current Playlist</h2>
-            <div id="song-list" class="song-list"></div>
+            <div id="current-playlist" class="song-list"></div>
           </div>
           <div class="all-playlist">
             <h2>All Playlist</h2>
-            <div id="song-list" class="song-list"></div>
+            <div id="all-playlist" class="playlist-section"></div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Link to the external JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>
