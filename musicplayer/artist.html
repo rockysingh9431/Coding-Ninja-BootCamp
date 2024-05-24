@@ -12,6 +12,7 @@
     <link rel="icon" href="images/album.png" type="image/x-icon" />
   </head>
   <body class="artist-page">
+    <!--Navigation Bar top-->
     <header>
       <nav class="navbar">
         <div class="nav">
@@ -40,6 +41,8 @@
         </div>
       </nav>
     </header>
+
+    <!---Container that includes main section and aside queue-->
     <main class="container">
       <section class="main">
         <div class="artist-container">
@@ -410,6 +413,7 @@
         </div>
       </section>
 
+      <!--Queue section having Similar Artists and Recently Played Songs-->
       <aside class="queue-body">
         <div class="queue-heading">
           <div class="artists-queue-head">Similar Artists</div>
@@ -1028,8 +1032,32 @@
         </div>
       </aside>
     </main>
-    <footer>
-      <div class="player-controls"></div>
+
+    <!--Footer having music player controls below-->
+
+    <footer class="player">
+      <div class="player-song">
+        <img src="images/Latest Hindi/Tum-se.jpg" alt="tum se" />
+        <div class="player-song-info">
+          <div class="song-name">Tum se</div>
+          <div class="song-artist">Arijit Singh</div>
+        </div>
+        <i class="fa-regular fa-heart like"></i>
+
+        <div class="controls">
+          <i class="fa-solid fa-backward-fast"></i>
+          <i class="fa-solid fa-backward"></i>
+          <i class="fa-solid fa-forward"></i>
+          <i class="fa-solid fa-forward-fast"></i>
+        </div>
+      </div>
+      <audio controls autoplay loop>
+        <source src="Tum Se.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="shuffle-repeat">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-repeat"></i>
+      </div>
     </footer>
   </body>
 </html>

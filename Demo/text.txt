@@ -1,0 +1,22 @@
+
+    function submitPost(event) {
+        event.preventDefault();
+      
+        const postInput = document.getElementById('postInput');
+        const imageInput = document.getElementById('imageInput');
+        const content = postInput.value;
+        const image = imageInput.files[0];
+      
+        if (content.trim() === '' || !image) {
+          return;
+        }
+      
+        const imageURL = URL.createObjectURL(image);
+      
+        
+        postInput.value = '';
+        imageInput.value = '';
+        renderPosts();
+      }
+  // Event listeners
+  document.getElementById('postForm').addEventListener('submit', submitPost);

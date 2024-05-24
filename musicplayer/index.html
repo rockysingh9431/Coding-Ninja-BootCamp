@@ -193,7 +193,7 @@
         </div>
 
         <!-- Popular Artists Section-->
-        <div class="popular-artists mt6rem">
+        <div class="popular-artists">
           <div class="title">Popular Artists</div>
           <div class="artists">
             <div class="artist-details">
@@ -460,9 +460,9 @@
           </div>
           <input type="checkbox" id="toggleMenuQueue" />
           <div class="queue-menu">
-            <div>Play Now</div>
+            <div>Playlist</div>
             <hr />
-            <div>Add to Queue</div>
+            <div>Add to Favorites</div>
           </div>
         </div>
 
@@ -766,9 +766,28 @@
     </main>
 
     <footer class="player">
-      <audio controls>
+      <div class="player-song">
+        <img src="images/Latest Hindi/Tum-se.jpg" alt="tum se" />
+        <div class="player-song-info">
+          <div class="song-name">Tum se</div>
+          <div class="song-artist">Arijit Singh</div>
+        </div>
+        <i class="fa-regular fa-heart like"></i>
+
+        <div class="controls">
+          <i class="fa-solid fa-backward-fast"></i>
+          <i class="fa-solid fa-backward"></i>
+          <i class="fa-solid fa-forward"></i>
+          <i class="fa-solid fa-forward-fast"></i>
+        </div>
+      </div>
+      <audio controls autoplay loop>
         <source src="Tum Se.mp3" type="audio/mpeg" />
       </audio>
+      <div class="shuffle-repeat">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-repeat"></i>
+      </div>
     </footer>
   </body>
 

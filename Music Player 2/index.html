@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Music Player</title>
+    <link rel="icon" href="album.png" type="image/png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/fb59b70c12.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Music Player</h1>
+    </div>
+    <button id="toggle-theme" class="toggle-theme">Dark/Light</button>
+    <div class="container">
+      <div class="playerDiv all-song">
+        <div class="filter-box">
+          <div class="filter-genre">Filter By Genre</div>
+          <div class="genre">
+            <select id="select-genre" class="select-genre">
+              <option value="All">All</option>
+              <option value="Hip Hop">Hip Hop</option>
+              <option value="Pop">Pop</option>
+              <option value="Rock">Rock</option>
+              <option value="Jazz">Jazz</option>
+              <option value="Dance">Dance</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="display-song">
+          <h2>All Songs</h2>
+          <div id="song-list" class="song-list"></div>
+        </div>
+      </div>
+
+      <div class="playerDiv">
+        <div class="card">
+          <div id="song-info" class="card-body"></div>
+        </div>
+        <div class="audio-controls">
+          <div class="audio">
+            <i id="prev-btn" class="fa-solid fa-backward btn-song"></i>
+            <audio id="audio" controls></audio>
+            <i id="next-btn" class="fa-solid fa-forward btn-song"></i>
+          </div>
+          <button type="submit" class="add-to-playlist">
+            😍Add To Playlist
+          </button>
+        </div>
+      </div>
+      <div class="playlist">
+        <div class="search">
+          <input
+            class="playlist-input"
+            type="text"
+            placeholder="Enter Playlist Name"
+          />
+          <button type="submit" class="add-playlist">Add Playlist</button>
+        </div>
+        <div class="playlist-details">
+          <div class="current-playlist">
+            <h2>Current Playlist</h2>
+            <div id="song-list" class="song-list"></div>
+          </div>
+          <div class="all-playlist">
+            <h2>All Playlist</h2>
+            <div id="song-list" class="song-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
