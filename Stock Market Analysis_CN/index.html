@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stock Market</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Linking the CSS file for styling -->
+    <link href="/style.css" rel="stylesheet" />
+    <!-- Including the Chart.js library from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="heading">Stock Market Analysis</div>
+      </header>
+      <main class="main-container">
+        <!-- Chart container for displaying the stock chart -->
+        <div class="chart-container">
+          <div class="chart-image">
+            <!-- Canvas element for Chart.js to render the chart -->
+            <canvas id="stockChart" width="1300" height="600px"></canvas>
+            <!-- Buttons for selecting the time period of the chart -->
+            <div class="buttons">
+              <button class="timer-btn" value="1mo">1 Month</button>
+              <button class="timer-btn" value="3mo">3 Months</button>
+              <button class="timer-btn" value="1y">1 Year</button>
+              <button class="timer-btn" value="5y">5 Years</button>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar for displaying the list of stocks -->
+        <aside id="stocks-list" class="stock-list-container">
+          <div class="stock-list-heading">
+            <div class="name-heading">Stocks</div>
+            <div class="price-heading">Price</div>
+            <div class="profit-heading">Profit</div>
+          </div>
+        </aside>
+      </main>
+      <!-- Container for displaying stock details -->
+      <div id="stock-details" class="stock-info"></div>
+
+      <footer>
+        <p>© 2024 Stock Market Analysis. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <!-- Linking the JavaScript files -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

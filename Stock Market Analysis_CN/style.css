@@ -1,0 +1,165 @@
+/* Body styles */
+body {
+  height: auto;
+  transition: all 1s ease-in-out;
+  background: linear-gradient(135deg, rgb(164, 255, 163), rgb(125, 125, 255));
+}
+
+/* Heading styles */
+.heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgb(47, 1, 1);
+  display: flex;
+  justify-content: center;
+}
+
+/* Container styles */
+.container {
+  height: 91vh;
+  padding: 2rem;
+}
+
+/* Main container styles */
+.main-container {
+  padding: 2rem;
+  padding-bottom: 0rem;
+  display: flex;
+}
+
+/* Stock list container styles */
+.stock-list-container {
+  width: 23%;
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 40%;
+}
+
+/* Stock item styles */
+.stock-item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  margin: 0.5rem;
+}
+
+/* Stock name button styles */
+.name-btn {
+  width: 25%;
+  color: white;
+  font-weight: bolder;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: rgb(4, 4, 163);
+}
+
+/* Stock name button hover effect */
+.name-btn:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(17, 4, 62);
+}
+
+/* Stock value styles */
+.stock-value {
+  width: 20%;
+}
+
+/* Stock profit styles */
+.stock-profit {
+  width: 15%;
+  color: green;
+}
+
+/* Stock loss styles */
+.stock-loss {
+  width: 15%;
+  color: red;
+}
+
+/* Stock info styles */
+.stock-info {
+  padding: 2rem;
+  padding-right: 0px;
+  display: block;
+  margin-top: 30px;
+  margin: auto;
+  width: screen;
+}
+
+/* Stock details styles */
+.stock-details {
+  font-size: 1.5rem;
+  font-weight: 900;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Summary styles */
+.summary {
+  font-size: 0.9rem;
+  font-weight: 540;
+  width: 100%;
+}
+
+/* Chart container styles */
+.chart-container {
+  width: 80%;
+}
+
+/* Chart image styles */
+.chart-image {
+  position: relative;
+  width: 75%;
+  height: 480px;
+  border: 3px solid black;
+}
+
+/* Canvas styles */
+canvas {
+  display: block;
+  width: 1330px;
+  height: 400px;
+}
+
+/* Buttons container styles */
+.buttons {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+/* Button styles */
+.buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(70, 13, 122);
+  border-radius: 2rem;
+  color: white;
+}
+
+/* Timer button hover effect */
+.timer-btn:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(33, 3, 44);
+}
+
+/* Stock list heading styles */
+.stock-list-heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  padding: 20px 0px 10px 10px;
+}
