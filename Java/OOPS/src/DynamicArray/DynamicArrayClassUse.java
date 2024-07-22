@@ -1,4 +1,4 @@
-package DynamicArray;
+package src.DynamicArray;
 
 public class DynamicArrayClassUse {
    public static void main(String[] args) {

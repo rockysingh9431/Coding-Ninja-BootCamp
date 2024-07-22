@@ -1,4 +1,4 @@
-package Fraction;
+package src.Fraction;
 
 public class Fraction {
   private int numerator;

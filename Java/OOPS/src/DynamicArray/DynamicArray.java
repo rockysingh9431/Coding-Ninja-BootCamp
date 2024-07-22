@@ -1,4 +1,4 @@
-package DynamicArray;
+package src.DynamicArray;
 
 public class DynamicArray {
   private int arr[];

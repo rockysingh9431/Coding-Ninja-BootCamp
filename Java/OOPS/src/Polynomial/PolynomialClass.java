@@ -1,4 +1,4 @@
-package Polynomial;
+package src.Polynomial;
 
 import java.util.Scanner;
 public class PolynomialClass {

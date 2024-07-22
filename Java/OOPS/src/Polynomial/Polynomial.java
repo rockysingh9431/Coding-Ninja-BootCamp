@@ -1,4 +1,4 @@
-package Polynomial;
+package src.Polynomial;
 
 public class Polynomial {
 	int polyCoeff[];

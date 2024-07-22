@@ -1,4 +1,4 @@
-package Fraction;
+package src.Fraction;
 
 public class FractionUse {
   public static void main(String[] args) {

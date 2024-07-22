@@ -1,4 +1,4 @@
-package ComplexNumber;
+package src.ComplexNumber;
 import java.util.Scanner;
 public class ComplexNumberUse {
   public static void main(String[] args) {

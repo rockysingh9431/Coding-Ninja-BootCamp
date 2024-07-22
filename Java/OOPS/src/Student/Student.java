@@ -1,4 +1,4 @@
-package Student;
+package src.Student;
 public class Student {
     private int rollNumber;
     private String name;
