@@ -1,15 +1,20 @@
 package src.Inheritance;
 
-public class Bicycle extends Vehicle {
+import src.Interface.VehicleInterface;
+
+public class Bicycle extends Vehicle implements VehicleInterface {
   String color;
   int numDoors;
 
-  Bicycle(){
+  Bicycle() {
     System.out.println("Bicycle");
   }
 
-  public boolean isMotorized(){
+  public boolean isMotorized() {
     return false;
   }
-  
+
+  public String EngineCapacity() {
+    return "No Engine";
+  }
 }

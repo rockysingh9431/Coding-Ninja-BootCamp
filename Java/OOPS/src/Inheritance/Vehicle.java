@@ -1,19 +1,23 @@
 package src.Inheritance;
 
-public abstract class Vehicle {
+import src.Interface.PrintInterface;
+
+public class Vehicle implements PrintInterface {
   protected int numWheels;
   protected int maxSpeed;
 
-  protected Vehicle(){
+  protected Vehicle() {
     System.out.println("Vehicle");
   }
-   Vehicle(int numWheels, int maxSpeed) {
+
+  Vehicle(int numWheels, int maxSpeed) {
     this.numWheels = numWheels;
-    this.maxSpeed=maxSpeed;
+    this.maxSpeed = maxSpeed;
     System.out.println("Vehicle");
   }
-  protected void print(){
-    System.out.println("This vehicle has " + numWheels + " wheels "+ " and maxSpeed "+maxSpeed+" kmph.");
+
+  public void print() {
+    System.out.println("This vehicle has " + numWheels + " wheels " + " and maxSpeed " + maxSpeed + " kmph.");
   }
-  public abstract boolean isMotorized();
+
 }
