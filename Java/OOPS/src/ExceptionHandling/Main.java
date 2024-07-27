@@ -12,7 +12,6 @@ public class Main {
     try {
       System.out.println(divide(2, 0));
     } catch (DivideByZeroException exception) {
-      // TODO: handle exception
       System.out.println("Divide by zero not allowed ");
     } finally {
       System.out.println("done exception handling");
