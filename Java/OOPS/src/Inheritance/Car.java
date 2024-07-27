@@ -1,9 +1,8 @@
 package src.Inheritance;
 
-import src.Interface.VehicleInterface;
 import src.Interface.*;
 
-public class Car extends Vehicle implements VehicleInterface, PrintInterface {
+public class Car extends Vehicle implements VehicleInterface {
   String color;
   int numDoors;
 
@@ -14,15 +13,18 @@ public class Car extends Vehicle implements VehicleInterface, PrintInterface {
     System.out.println("Car");
   }
 
+  @Override
   public void print() {
     super.print();
     System.out.println("color " + color + " numDoors " + numDoors);
   }
 
+  @Override
   public boolean isMotorized() {
     return true;
   }
 
+  @Override
   public String EngineCapacity() {
     return "Engine Capacity: 2500 cc";
   }

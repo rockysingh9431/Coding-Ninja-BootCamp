@@ -11,6 +11,7 @@ public class TicTacToe {
   // Start Game
   public void startGame() {
     numPlayers = 0;
+    @SuppressWarnings("")
     Scanner s = new Scanner(System.in);
     if (player1 == null || player2 == null) {
       player1 = takePlayerInput(++numPlayers);
@@ -57,6 +58,7 @@ public class TicTacToe {
   // Function to execute players turn and return the status of the game
 
   public int playerTurn(int status, Player player) {
+    @SuppressWarnings("resource")
     Scanner s = new Scanner(System.in);
     System.out.println(player.getName() + "'s turn and symbol:" + player.getSymbol());
     System.out.println("Enter x y:");
@@ -82,6 +84,7 @@ public class TicTacToe {
   // Function to take player Input
 
   public Player takePlayerInput(int playerNumber) {
+    @SuppressWarnings("resource")
     Scanner scan = new Scanner(System.in);
     System.out.println("Player " + playerNumber + ", enter your name:");
     String name = scan.nextLine();

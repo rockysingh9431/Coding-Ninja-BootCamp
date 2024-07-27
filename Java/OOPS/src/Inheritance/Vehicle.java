@@ -16,6 +16,7 @@ public class Vehicle implements PrintInterface {
     System.out.println("Vehicle");
   }
 
+  @Override
   public void print() {
     System.out.println("This vehicle has " + numWheels + " wheels " + " and maxSpeed " + maxSpeed + " kmph.");
   }
