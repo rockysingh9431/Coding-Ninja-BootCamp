@@ -1,9 +1,14 @@
 package src.HashMap;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.*;
 public class Main {
   public static void main(String[] args) {
     Map<Integer, Integer> map = new Map<>();
-
+    List<Integer> list = new LinkedList<>();
+    HashSet<Integer> set = new HashSet<>();
+    
     map.insert(4, 6);
     map.insert(5, 10);
     map.insert(6, 12);
